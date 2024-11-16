@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi comercio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mi Tienda</div>
+        <nav>
+            <input type="text" placeholder="Buscar productos..." class="search-bar">
+            <div class="cart-icon">
+                <img src="carrito2.png" alt="carrito" width="25px">
+                <label>Carrito</label>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <aside class="filters">
+            <h3>Filtrar por</h3>
+            <div>
+                <label>Rango de precio</label>
+                <input type="range" min="0" max="1000" step="10" id="priceRange">
+            </div>
+            <div>
+                <label>Categoría</label>
+                <select id="categorySelect">
+                    <option value="all">Todas</option>
+                    <option value="electronics">Electrónica</option>
+                    <option value="clothing">Ropa</option>
+                </select>
+            </div>
+        </aside>
+        <section class="product-list">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; contactenos</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="formulario.html">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
